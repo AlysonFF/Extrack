@@ -9,7 +9,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 
-dotenv.config()
+dotenv.config({ path: new URL('../server/.env', import.meta.url).pathname })
 
 const app = express()
 
