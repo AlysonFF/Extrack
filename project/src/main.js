@@ -9,6 +9,8 @@ import ProjectList from './views/ProjectList.vue'
 import ProjectDetails from './views/ProjectDetails.vue'
 import Login from './views/Login.vue'
 import Register from './views/Register.vue'
+import ForgotPassword from './views/ForgotPassword.vue'
+import ResetPassword from './views/ResetPassword.vue'
 import Vue3Toastify from 'vue3-toastify'
 import 'vue3-toastify/dist/index.css'
 
@@ -18,7 +20,10 @@ const routes = [
   { path: '/projects/new', component: ProjectForm, meta: { requiresAuth: true } },
   { path: '/projects/:id', component: ProjectDetails, meta: { requiresAuth: true } },
   { path: '/login', component: Login },
-  { path: '/register', component: Register }
+  { path: '/register', component: Register },
+  { path: '/forgot-password', component: ForgotPassword },
+  { path: '/reset-password/:token', component: ResetPassword }
+
 ]
 
 const router = createRouter({

@@ -16,6 +16,6 @@ const { isAuthenticated } = storeToRefs(authStore)
     </main>
   </div>
   <footer class="bg-blue-800 text-white p-4 text-center">
-      <p>© 2025 Projeto de Extensão - Todos os direitos reservados</p>
+      <p>© 2025 Projeto de Extensão - MIT License</p>
     </footer>
 </template>

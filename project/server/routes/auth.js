@@ -97,11 +97,12 @@ router.post('/forgot-password', async (req, res) => {
     const mailOptions = {
       to: user.email,
       from: process.env.EMAIL_USER,
-      subject: 'Recuperação de Senha - Projeto de Extensão',
-      text: `Você está recebendo este email porque você (ou alguém) solicitou a recuperação de senha.\n\n
-        Por favor, clique no link a seguir ou cole-o no seu navegador para completar o processo:\n\n
-        http://${req.headers.host}/reset-password/${resetToken}\n\n
-        Se você não solicitou isso, por favor ignore este email e sua senha permanecerá inalterada.\n`
+      subject: 'Recuperação de Senha - ExTrack Projeto de Extensão',
+      html: `
+        <p>Você solicitou a recuperação de senha.</p>
+        <p><a href="https://extrack-dyga.onrender.com/reset-password/${resetToken}">Clique aqui para redefinir sua senha</a></p>
+        <p>Se você não solicitou isso, ignore este email.</p>
+      `
     }
 
     await transporter.sendMail(mailOptions)
