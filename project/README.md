@@ -3,6 +3,7 @@
 Extrack é uma aplicação web desenvolvida para **cadastrar, listar, editar e visualizar projetos de extensão universitária**. Com foco em simplicidade e organização, oferece uma interface intuitiva para usuários gerenciarem seus projetos de forma segura.
 
 ## 🚀 Acesse agora
+Quando acessar aguarde um pouco até a página ser buildada.
 
 👉 **[https://extrack-dyga.onrender.com](https://extrack-dyga.onrender.com)**
 
